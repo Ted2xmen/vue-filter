@@ -1,23 +1,19 @@
 <template>
   <div class="home">
-     <TheHero />
+    <TheHero />
     <TheMain />
-     
-
-
   </div>
 </template>
 
 <script>
-
-import TheMain from '@/components/TheMain.vue'
-import TheHero from '@/components/TheHero.vue'
+import TheMain from "@/components/TheMain.vue";
+import TheHero from "@/components/TheHero.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     TheMain,
-    TheHero
-  }
-}
+    TheHero,
+  },
+};
 </script>

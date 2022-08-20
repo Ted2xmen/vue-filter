@@ -53,7 +53,7 @@
             v-model="selectedCategory"
           />Mentee</label
         >
-          <label for=""
+        <label for=""
           ><input
             type="radio"
             class="mx-2"
@@ -63,8 +63,6 @@
         >
       </div>
     </form>
-
-    <!-- <Form selectedCategory="selectedCategory" /> -->
 
     <section v-if="false">
       <h3>Tables</h3>
@@ -91,7 +89,6 @@
 
     <section>
       <div class="row py-5 row-cols-1 row-cols-md-3 g-5">
-        <!-- <div class="col" v-for="(item, index) in filteredSearch" :key="index"> -->
         <div class="col" v-for="(item, index) in filteredSearch" :key="index">
           <Card
             :name="item.name"
@@ -107,24 +104,15 @@
 </template>
 
 
-<style scoped>
-.form-bg {
-  background-color: #417d7a;
-}
-</style>
-
-
 
 <script>
 import axios from "axios";
 import Card from "@/components/shared/Card.vue";
-// import Form from "@/components/shared/Form.vue";
 
 export default {
   name: "TheMain",
   components: {
     Card,
-    // Form
   },
 
   data() {
@@ -178,12 +166,6 @@ export default {
 </script>
 
 
-
-
-
-
-
-
 <style scoped lang="scss">
 h3 {
   margin: 40px 0 0;
@@ -198,5 +180,8 @@ li {
 }
 a {
   color: #133d2a;
+}
+.form-bg {
+  background-color: #417d7a;
 }
 </style>
